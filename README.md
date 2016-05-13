@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/guiguegon/SineView.svg?branch=master)](https://travis-ci.org/guiguegon/SineView)
+[![](https://jitpack.io/v/guiguegon/SineView.svg)](https://jitpack.io/#guiguegon/SineView)
 
 # SineView
 SineView allows you to paint and animate a sine
@@ -8,6 +9,9 @@ Add the following dependency to your gradle file
 ```java
 compile 'es.guiguegon:sineview:1.0.0'
 ```
+
+or use JitPack [![](https://jitpack.io/v/guiguegon/SineView.svg)](https://jitpack.io/#guiguegon/SineView)
+
 ## Usage
 The minimum API is 11.
 
