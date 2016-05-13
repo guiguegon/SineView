@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SineView">
+        <attr format="float" name="sv_sine_alpha"/>
+        <attr format="float" name="sv_sine_phase"/>
+        <attr format="dimension" name="sv_sine_amplitude"/>
+        <attr format="integer" name="sv_sine_animation_time_millis"/>
+        <attr format="float" name="sv_sine_periods_to_show"/>
+        <attr format="color" name="sv_sine_color"/>
+        <attr format="boolean" name="sv_sine_fill"/>
+    </declare-styleable>
+</resources>
