@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/guiguegon/SineView.svg?branch=master)](https://travis-ci.org/guiguegon/SineView)
+
 # SineView
 SineView allows you to paint and animate a sine
 
