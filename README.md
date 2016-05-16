@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/guiguegon/SineView.svg?branch=master)](https://travis-ci.org/guiguegon/SineView)
 [![](https://jitpack.io/v/guiguegon/SineView.svg)](https://jitpack.io/#guiguegon/SineView)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SineView-green.svg?style=true)](https://android-arsenal.com/details/1/3590)
 
 # SineView
 SineView allows you to paint and animate a sine
