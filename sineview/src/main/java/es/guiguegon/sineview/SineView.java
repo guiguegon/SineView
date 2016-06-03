@@ -99,6 +99,19 @@ public class SineView extends View {
         paramSineFill = typedArray.getBoolean(R.styleable.SineView_sv_sine_fill, DEFAULT_FILL);
     }
 
+    protected void initialize() {
+        mPaint.setAntiAlias(true);
+        mPaint.setColor(paramSineColor);
+        if (paramSineFill) {
+            mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+        } else {
+            mPaint.setStyle(Paint.Style.STROKE);
+        }
+        mPaint.setAlpha((int) (255 * paramSineAlpha));
+        setLayerType(LAYER_TYPE_HARDWARE, mPaint);
+        prepareWave();
+    }
+
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -137,19 +150,6 @@ public class SineView extends View {
                 startWave();
             }
         }
-    }
-
-    protected void initialize() {
-        mPaint.setAntiAlias(true);
-        mPaint.setColor(paramSineColor);
-        if (paramSineFill) {
-            mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        } else {
-            mPaint.setStyle(Paint.Style.STROKE);
-        }
-        mPaint.setAlpha((int) (255 * paramSineAlpha));
-        setLayerType(LAYER_TYPE_HARDWARE, mPaint);
-        prepareWave();
     }
 
     @Override
@@ -209,7 +209,6 @@ public class SineView extends View {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 step = (float) animation.getAnimatedValue();
-                calculateScaleY();
                 calculatePhase();
                 invalidate();
             }
